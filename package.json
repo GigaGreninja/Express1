@@ -1,0 +1,49 @@
+{
+    "name": "Express1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "DEBUG=app nodemon app.js",
+        "lint": "eslint app.js"
+    },
+    "author": "me",
+    "license": "-3-",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bootstrap": "^4.5.3",
+        "chalk": "4.1.0",
+        "cookie-parser": "^1.4.5",
+        "ejs": "^3.1.5",
+        "express": "4.17.1",
+        "express-session": "^1.17.1",
+        "jquery": "^3.5.1",
+        "mongodb": "^3.6.3",
+        "morgan": "^1.10.0",
+        "mssql": "^6.3.1",
+        "nodemon": "^2.0.6",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "pug": ""
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.11.1",
+        "@typescript-eslint/parser": "^4.11.1",
+        "eslint": "^7.17.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "typescript": "^4.1.3"
+    },
+    "nodemonConfig": {
+        "restartable": "rs",
+        "ignore": [
+            "node_modules/**/node_modules"
+        ],
+        "delay": "2500",
+        "env": {
+            "NODE_ENV": "development",
+            "PORT": 3000
+        }
+    }
+}
